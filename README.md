@@ -15,9 +15,8 @@ administrative boundaries to output a CSV file where each line is
 `orig,dest,count`.
 
 Administrative boundaries (ABs) are concepts to describe different geospatial
-concepts, like countries, states, provinces, and more. Read more about ABs [on
-the MagicBox
-wiki](https://github.com/unicef/magicbox/wiki/Administrative-boundaries).
+concepts, like countries, states, provinces, and more. Read more about ABs [on 
+MagicBox documentation](https://magicbox.readthedocs.io/en/latest/administrative-boundaries.html).
 
 ### Why we use it
 
