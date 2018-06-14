@@ -95,16 +95,23 @@ To this section specifically, we need to cover these things:
 
 In this repository you can find a Dockerfile to build an image of this project.
 
-Build the image:
+* **Step 1**: Build the image:
 
 ```
 docker build -t unicef/magicbox_aggregate_mobility .
 ```
 
-You can then run this project within docker using:
+* **Step 2**: You can then run this project within docker using:
 
 ```
 docker run --rm -v $(pwd):/app unicef/magicbox_aggregate_mobility node main.js
+```
+
+**NOTE:** If your operating system is Windows NT and you're using PowerShell to access Docker for Windows, spell the full path out rather than using `$(pwd)`. Also note: there's no space or colon **but a backward slash** between your directory and `app`; one space between `app` and `unicef...`; one space between `...mobility` and `node`; and one space between `node` and `main.js`.
+
+
+```
+docker run --rm -v C:\Users\YourName\Current\Directory\app unicef/magicbox_aggregate_mobility node main.js
 ```
 
 ## Running tests
